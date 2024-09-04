@@ -1,0 +1,9 @@
+
+@let lego = (lego$ | async);
+@if(!lego){
+<p>Loading...</p>
+}@else {
+<p>{{lego.detalles}}</p>
+<p>{{lego.nombre}}</p>
+} 
+

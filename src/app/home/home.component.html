@@ -1,0 +1,19 @@
+<body class="conteiner">
+    @let home = (legoResult$ | async);
+    
+    <div>
+        <h1>
+            Legos
+        </h1>
+        <body>
+            @for(lego of home; track lego.id; let i = $index){
+            <div>
+                <p class="producto">{{ lego.nombre }}</p>
+                <p>Valor del Lego: ${{ lego.precio}}</p>
+                <button class="button" (click)="onLegoCliked(lego.id)">Detalles</button>
+            </div>
+            }
+        </body>
+
+    </div>
+</body>

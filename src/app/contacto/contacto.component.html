@@ -1,0 +1,74 @@
+
+<div class="conteiner">
+    <div class="row justify-content-center">
+        <form 
+        class="col-md-8 col-lg-6"
+        [formGroup]="legoForm"
+        (submit)="handleSubmit()"
+        >
+            <fieldset class="bg-secondary text-white p-3">
+                <legend>CONTACTANOS</legend>
+                <div>
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text"
+                    class="form-control"
+                    id="nombre"
+                    formControlName="nombre"
+                    placeholder="Nombre"
+                    autocomplete="nombre"                
+                    />
+                </div>
+                <div class="alert alert-danger" [hidden]="nommbre.valid || nommbre.untouched" >Se requiere Nombre</div>
+                <div>
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text"
+                    class="form-control"
+                    id="apellido"
+                    formControlName="apellido"
+                    placeholder="Apellido"
+                    autocomplete="apellido"                
+                    />
+                </div>
+                <div class="alert alert-danger" [hidden]="apellido.valid || apellido.untouched" >Se requiere Apellido</div>
+                <div class=>
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email"
+                    class="form-control"
+                    id="email"
+                    formControlName="email"
+                    placeholder="Email"
+                    autocomplete="email"                
+                    />
+                </div>
+                <div class="alert alert-danger" [hidden]="email.valid || email.untouched" >Se requiere Direccion de Correo Electronico</div>
+                <div>
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="number"
+                    class="form-control"
+                    id="telefono"
+                    formControlName="telefono"
+                    placeholder="Telefono"
+                    autocomplete="telefono"                
+                    />
+                </div>
+                <div class="alert alert-danger" [hidden]="telefono.valid || telefono.untouched" >Se requiere numero de Telefono</div>
+                <div>
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea type="text"
+                    class="form-control"
+                    id="mensaje"
+                    formControlName="mensaje"
+                    placeholder="mensaje"
+                    autocomplete="mensaje"                
+                    ></textarea>
+                </div>
+                <div class="alert alert-danger" [hidden]="mensaje.valid || mensaje.untouched" >Envianos un Mensaje</div>
+                <div>
+                    <button type="submit" class="btn btn-outline-warning my-2" [disabled]="legoForm.invalid">Enviar</button>
+                </div>
+                </fieldset>
+        </form>
+    </div>
+
+
+</div>
