@@ -1,20 +1,22 @@
 
+<body>
+    
 <div class="conteiner">
     <div class="row justify-content-center">
         <form 
-        class="col-md-8 col-lg-6"
+        Class="col-md-8 col-lg-6"
         [formGroup]="legoForm"
         (submit)="handleSubmit()"
         >
             <fieldset class="bg-secondary text-white p-3">
-                <legend>CONTACTANOS</legend>
+                <legend>CONTACTO</legend>
                 <div>
                     <label for="nombre" class="form-label">Nombre</label>
                     <input type="text"
                     class="form-control"
                     id="nombre"
                     formControlName="nombre"
-                    placeholder="Nombre"
+                    placeholder="Escribe tu Nombre"
                     autocomplete="nombre"                
                     />
                 </div>
@@ -25,7 +27,7 @@
                     class="form-control"
                     id="apellido"
                     formControlName="apellido"
-                    placeholder="Apellido"
+                    placeholder="Escribe tu Apellido"
                     autocomplete="apellido"                
                     />
                 </div>
@@ -36,7 +38,7 @@
                     class="form-control"
                     id="email"
                     formControlName="email"
-                    placeholder="Email"
+                    placeholder="Escribe tu Correo"
                     autocomplete="email"                
                     />
                 </div>
@@ -47,7 +49,7 @@
                     class="form-control"
                     id="telefono"
                     formControlName="telefono"
-                    placeholder="Telefono"
+                    placeholder="Escribe tu Telefono"
                     autocomplete="telefono"                
                     />
                 </div>
@@ -58,17 +60,17 @@
                     class="form-control"
                     id="mensaje"
                     formControlName="mensaje"
-                    placeholder="mensaje"
+                    placeholder="Escribe un Mensaje"
                     autocomplete="mensaje"                
                     ></textarea>
                 </div>
-                <div class="alert alert-danger" [hidden]="mensaje.valid || mensaje.untouched" >Envianos un Mensaje</div>
+                <div [hidden]="mensaje.valid || mensaje.untouched" >Envianos un Mensaje</div>
                 <div>
                     <button type="submit" class="btn btn-outline-warning my-2" [disabled]="legoForm.invalid">Enviar</button>
                 </div>
                 </fieldset>
         </form>
     </div>
-
-
 </div>
+
+</body>

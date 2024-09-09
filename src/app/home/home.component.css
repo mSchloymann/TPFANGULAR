@@ -1,3 +1,22 @@
+body {
+    background-image: url('./imagenes/legoimghome.jpg');
+    background-attachment: fixed;
+    margin: 0;
+    color: rgb(243, 248, 248);
+
+}
+
+.conteiner {
+    width: 500px;
+    margin: auto;
+    background: rgb(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    color: #fff;
+ }
+
 .button {
     cursor: pointer;
 }

@@ -42,5 +42,7 @@ export class ContactoComponent {
       email: this.email.value,
       mensaje: this.mensaje.value,
     }
+    return alert ('mensaje enviado')
   }
+
 }

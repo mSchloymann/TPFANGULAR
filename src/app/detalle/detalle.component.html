@@ -1,9 +1,17 @@
 
-@let lego = (lego$ | async);
-@if(!lego){
-<p>Loading...</p>
-}@else {
-<p>{{lego.detalles}}</p>
-<p>{{lego.nombre}}</p>
-} 
+<body>
+    <div class="conteiner">
+        @let lego = (lego$ | async);
+       @if(!lego){
+       <p>Loading...</p>
+       }@else {
+        <p>El {{lego.nombre}}</p>
+       <p>{{lego.detalles}}</p>
+       <p>Su precio de lista es ${{lego.precio}}</p>
+       <p>Podes financiarlo en hasta 12 cuotas sin interés y abonarlo con diferentes medios de pago.</p>
+       } 
+       </div>
+</body>
+
+
 

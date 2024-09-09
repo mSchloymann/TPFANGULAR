@@ -1,5 +1,5 @@
-export interface lego {
-    id?: string;
+export interface Lego {
+    id: string;
     nombre: string;
     precio: number;
     detalles: string;
